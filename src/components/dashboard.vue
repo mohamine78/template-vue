@@ -1,0 +1,132 @@
+<template>
+  <div>
+    <SideBar />
+    <Tableau />
+  </div>
+</template>
+
+<script>
+import SideBar from "./sidebar.vue";
+import Tableau from "./tableau.vue";
+export default {
+  name: "sidebarPage",
+  components: {
+    SideBar,
+    Tableau,
+  },
+};
+</script>
+
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.nav-card {
+  width: 300px;
+}
+
+.nav-logo {
+  padding: 40px 60px;
+}
+
+.nav-search {
+  padding: 10px 60px;
+}
+
+.nav-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 60px 60px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  color: #ffffff;
+  cursor: pointer;
+  gap: 18px;
+  font-size: 20px;
+}
+
+.main {
+  margin-left: 300px;
+  padding: 20px 60px;
+}
+
+.glass {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-right: 10px;
+}
+
+.glass-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+.glass-card {
+  padding: 10px;
+}
+
+.glass-card-top {
+  padding: 1px;
+}
+
+.cardos {
+  background: #0a0a08;
+  border-radius: 10px;
+  padding: 20px;
+  color: #ffffff;
+  border: 1px solid #2c2c31;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.widthmax {
+  width: 100%;
+}
+
+.table > :not(caption) > * > * {
+  background: #0a0a08;
+}
+
+a {
+  text-decoration: none;
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.list {
+  text-align: center;
+  font-size: 20px;
+}
+</style>
